@@ -1,18 +1,37 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Waveroom / Surf trips</title>
+
+  <title>Waveroom / Surf Trips</title>
+
+  <!-- GOOGLE FONT -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="Css /style.css">
+
+  <!-- FAVICON -->
   <link rel="icon" href="Photos/Logo.png" type="image/png">
 </head>
+
 <body>
+
 <main class="page">
 
+  <!-- ========================================
+       NAVIGATION
+  ========================================= -->
+
   <header class="nav">
-    <a class="brand" href="#"><span class="brand-mark">≋</span> Waveroom</a>
+
+    <a class="brand" href="#">
+      <span class="brand-mark">≋</span>
+      Waveroom
+    </a>
 
     <nav class="nav-links" id="navLinks">
       <a href="#trips">Trips</a>
@@ -22,36 +41,385 @@
       <a href="#faq">FAQ</a>
     </nav>
 
-    <a class="nav-cta" href="#booking">Plan your trip ↗</a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    <a class="nav-cta" href="#booking">
+      Plan your trip ↗
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      ☰
+    </button>
+
   </header>
 
+
+
   <section class="hero">
-    <img class="hero-photo" src="photos/surfer.png" alt="Surfer">
+    <video class="hero-vid" autoplay muted loop playsinline>
+      <source src="surfvid.mov" type="video/mp4">
+    </video>
 
-    <div class="hero-title">SURF<span class="star">*</span>TRIPS</div>
+    <div class="hero-title">
+      SURF<span class="star">*</span>TRIPS
+    </div>
 
-    <svg class="scribble" viewBox="0 0 420 100" fill="none" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
-      <path d="M5 65 C35 30 45 35 35 80 C55 55 65 35 70 48 C80 75 95 15 110 40 C125 65 135 30 150 40 C170 55 190 35 210 30 C250 20 270 15 300 0" stroke="#ff4b0b" stroke-width="5" stroke-linecap="round"/>
+    <svg class="scribble"
+      viewBox="0 0 420 100"
+      fill="none"
+      aria-hidden="true"
+      preserveAspectRatio="xMidYMid meet">
+
+      <path
+        d="M5 65 C35 30 45 35 35 80 C55 55 65 35 70 48 C80 75 95 15 110 40 C125 65 135 30 150 40 C170 55 190 35 210 30 C250 20 270 15 300 0"
+        stroke="#ff4b0b"
+        stroke-width="5"
+        stroke-linecap="round"/>
+
     </svg>
 
     <div class="hero-bottom">
+
       <div class="rating">
-        <div class="stars">★★★★★ <span>4.5/5</span></div>
+
+        <div class="stars">
+          ★★★★★ <span>4.5/5</span>
+        </div>
+
         THE SURF TRIP CLUB
+
       </div>
-      <h1>Find your wave. Find your people.</h1>
-      <a class="btn" href="#trips">Explore surf trips ↗</a>
+
+      <h1>
+        Find your wave. Find your people.
+      </h1>
+
+      <a class="btn" href="#trips">
+        Explore surf trips ↗
+      </a>
+
     </div>
+
   </section>
 
-  <section id="trips"></section>
-  <section id="booking"></section>
+
+  <section id="trips">
+
+    <!-- SECTION INTRO -->
+    <div class="section-trip">
+
+      <div>
+
+        <div class="sub">
+          01 / Pick your next escape
+        </div>
+
+        <h2>
+          Trips worth<br>
+          getting salty for.
+        </h2>
+
+      </div>
+
+      <p class="section-trip-intro">
+        From your first whitewater ride to down patrol with the locals.
+        Find a trip that matches your experience, your pace and your
+        kind of adventure.
+      </p>
+
+    </div>
+    <div class="trip-tabs" role="group" aria-label="Filter trips">
+
+      <button class="tap active" data-filter="all">
+        All trips
+      </button>
+
+      <button class="tap" data-filter="beginner">
+        Beginner
+      </button>
+
+      <button class="tap" data-filter="intermediate">
+        Intermediate
+      </button>
+
+      <button class="tap" data-filter="advanced">
+        Advanced
+      </button>
+
+    </div>
+
+
+    <div class="trip-grid">
+
+      <article class="trip-card" data-level="beginner">
+
+        <div class="trip-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1502933691298-84fc14542831?auto=format&fit=crop&w=1000&q=85"
+            alt="Surf coast in Portugal">
+
+          <span class="tag">
+            Beginner friendly
+          </span>
+
+        </div>
+
+        <div class="trip-info">
+
+          <div class="trip-meta">
+            <span>PORTUGAL · 7 DAYS</span>
+            <span>☼ MAY – OCT</span>
+          </div>
+
+          <h3>Ericeira, Portugal</h3>
+
+          <p>
+            Easy-going waves, salty sunsets and a crew
+            that feels like home.
+          </p>
+
+          <div class="trip-foot">
+
+            <div class="price">
+              €890 <small>/ person</small>
+            </div>
+
+            <a href="#booking" class="text-link">
+              Discover ↗
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+      <article class="trip-card" data-level="intermediate">
+
+        <div class="trip-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1530053969600-caed2596d242?auto=format&fit=crop&w=1000&q=85"
+            alt="Tropical Bali surf beach">
+
+          <span class="tag">
+            Intermediate
+          </span>
+
+        </div>
+
+        <div class="trip-info">
+
+          <div class="trip-meta">
+            <span>INDONESIA · 10 DAYS</span>
+            <span>☼ APR – OCT</span>
+          </div>
+
+          <h3>Canggu, Bali</h3>
+
+          <p>
+            Warm water, tropical mornings and endless
+            sessions in paradise.
+          </p>
+
+          <div class="trip-foot">
+
+            <div class="price">
+              €1,290 <small>/ person</small>
+            </div>
+
+            <a href="#booking" class="text-link">
+              Discover ↗
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+      <article class="trip-card" data-level="beginner">
+
+        <div class="trip-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1455729552865-3658a5d39692?auto=format&fit=crop&w=1000&q=85"
+            alt="Moroccan coastline">
+
+          <span class="tag">
+            Beginner friendly
+          </span>
+
+        </div>
+
+        <div class="trip-info">
+
+          <div class="trip-meta">
+            <span>MOROCCO · 8 DAYS</span>
+            <span>☼ SEP – APR</span>
+          </div>
+
+          <h3>Taghazout, Morocco</h3>
+
+          <p>
+            Golden beaches, laid-back surf culture
+            and unforgettable road trips.
+          </p>
+
+          <div class="trip-foot">
+
+            <div class="price">
+              €950 <small>/ person</small>
+            </div>
+
+            <a href="#booking" class="text-link">
+              Discover ↗
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+      <article class="trip-card" data-level="advanced">
+
+        <div class="trip-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?auto=format&fit=crop&w=1000&q=85"
+            alt="Surfer riding an ocean wave">
+
+          <span class="tag">
+            Advanced
+          </span>
+
+        </div>
+
+        <div class="trip-info">
+
+          <div class="trip-meta">
+            <span>FRANCE · 6 DAYS</span>
+            <span>☼ JUN – SEP</span>
+          </div>
+
+          <h3>Hossegor, France</h3>
+
+          <p>
+            Powerful beach breaks, surf culture
+            and sessions for experienced riders.
+          </p>
+
+          <div class="trip-foot">
+
+            <div class="price">
+              €790 <small>/ person</small>
+            </div>
+
+            <a href="#booking" class="text-link">
+              Discover ↗
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+      <article class="trip-card" data-level="intermediate">
+
+        <div class="trip-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1000&q=85"
+            alt="Sri Lankan tropical ocean">
+
+          <span class="tag">
+            Intermediate
+          </span>
+
+        </div>
+
+        <div class="trip-info">
+
+          <div class="trip-meta">
+            <span>SRI LANKA · 12 DAYS</span>
+            <span>☼ NOV – APR</span>
+          </div>
+
+          <h3>Weligama, Sri Lanka</h3>
+
+          <p>
+            Sunrise surf sessions, palm-lined beaches
+            and a taste of island life.
+          </p>
+
+          <div class="trip-foot">
+
+            <div class="price">
+              €1,390 <small>/ person</small>
+            </div>
+
+            <a href="#booking" class="text-link">
+              Discover ↗
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+      <article class="trip-card" data-level="intermediate">
+
+        <div class="trip-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=85"
+            alt="Fuerteventura beach and ocean">
+
+          <span class="tag">
+            Intermediate
+          </span>
+
+        </div>
+
+        <div class="trip-info">
+
+          <div class="trip-meta">
+            <span>CANARY ISLANDS · 7 DAYS</span>
+            <span>☼ ALL YEAR</span>
+          </div>
+
+          <h3>Fuerteventura, Spain</h3>
+
+          <p>
+            Wild coastlines, crystal-clear water
+            and a week away from everything.
+          </p>
+
+          <div class="trip-foot">
+
+            <div class="price">
+              €850 <small>/ person</small>
+            </div>
+
+            <a href="#booking" class="text-link">
+              Discover ↗
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
 
 </main>
-
-<script>
-</script>
 
 
 
